@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4718206229218150}
+  - component: {fileID: 114697003865357230}
   - component: {fileID: 212981533307335842}
   - component: {fileID: 114336151264976862}
   - component: {fileID: 61938191302360806}
@@ -82,8 +83,18 @@ MonoBehaviour:
   spawnPositionBala: {fileID: 4206748508303858, guid: e11a5fb859eece94c980103cac37f692,
     type: 2}
   marciano: {fileID: 1874794472620296}
-  balaEnemigo: {fileID: 1217924587674536, guid: 40c99db19490a7a4895770d139bea036,
-    type: 2}
+--- !u!114 &114697003865357230
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1874794472620296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d39e8dbde002ea442b8515ae818a5655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigoPorDebajo: {fileID: 0}
 --- !u!114 &114979007981688728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -106,7 +117,6 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -122,7 +132,6 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

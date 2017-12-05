@@ -36,8 +36,13 @@ public class EnemyController : MonoBehaviour {
 
 
 			//EnemyBulletController called too?
-			if (Random.value > fireRate) {
-				Instantiate (shot, enemy.position, enemy.rotation);
+			if (Random.value > fireRate) {		
+				Debug.Log ("ReferenciaEnemigo "+enemy.gameObject.GetComponent<ReferenciaEnemigo>());	
+				if (enemy.gameObject.GetComponent<ReferenciaEnemigo>().enemigoPorDebajo == null) {
+					Debug.Log ("Dispara");
+					Instantiate (shot, enemy.position, enemy.rotation);
+				}
+
 			}
 
 

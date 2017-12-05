@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\ImpactoBalaEnemigo.cs" />
      <Compile Include="Assets\Scripts\ImpactoEscudo.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\ReferenciaEnemigo.cs" />
      <Compile Include="Assets\Scripts\Reiniciar.cs" />
      <Compile Include="Assets\Scripts\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\ScoreObject.cs" />
