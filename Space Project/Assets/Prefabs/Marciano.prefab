@@ -19,11 +19,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4718206229218150}
-  - component: {fileID: 114697003865357230}
   - component: {fileID: 212981533307335842}
   - component: {fileID: 114336151264976862}
   - component: {fileID: 61938191302360806}
   - component: {fileID: 114979007981688728}
+  - component: {fileID: 114096091202054570}
   m_Layer: 8
   m_Name: Marciano
   m_TagString: Untagged
@@ -69,6 +69,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114096091202054570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1874794472620296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86dc23e6d877b3c419edffaec59407b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigoPorDebajo: {fileID: 1874794472620296}
 --- !u!114 &114336151264976862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -80,21 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b0e8b30149de049adb0e42dd16c4e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPositionBala: {fileID: 4206748508303858, guid: e11a5fb859eece94c980103cac37f692,
-    type: 2}
   marciano: {fileID: 1874794472620296}
---- !u!114 &114697003865357230
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1874794472620296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d39e8dbde002ea442b8515ae818a5655, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemigoPorDebajo: {fileID: 0}
 --- !u!114 &114979007981688728
 MonoBehaviour:
   m_ObjectHideFlags: 1

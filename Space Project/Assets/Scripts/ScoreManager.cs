@@ -2,16 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class ScoreManager : MonoBehaviour {
 
     public int currentScore; // 3º --> Puntuacion actual
+    //public int puntuacionMaxima;
     public ScoreText scoreText; // 13º --> referencia para pasarle el scripts "ScoreText"
-    
+    public HighScore highScore;
 
     private void Start()
     {
-        ResetScore(); // para no repetir codigo
+        
+        highScore.PuntuacionGuardada(); //al empezar el juego, sacamos por pantalla la puntuacion maxima
 
+        ResetScore(); // para no repetir codigo
+        
     }
     public void AddScore(int score) // 4º --> metodo para añadir la puntuacion que reciba
     {
@@ -24,5 +30,10 @@ public class ScoreManager : MonoBehaviour {
     {
         currentScore = 0; // 16º  --> Ponemos la puntuacion a cero
         scoreText.SetScore(currentScore); //17º --> Y por pantalla hacemos que salga 0 puntuaciones.
+    }
+
+    public void Update()
+    {
+        highScore.GuardarPuntuacion(currentScore); //cada frame, vamos comprobando que la puntuacion obtenida sea mayor que la puntuacion maxima guardada.
     }
 }

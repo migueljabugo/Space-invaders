@@ -2,20 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//script para darle direccion y fuerza a las balas de los enemigos
+
 public class DisparoEnemigo : MonoBehaviour
 {
 
     public Rigidbody2D myRigidbody;
     Vector2 direccion;
     public float fuerzaLanzamiento;
-    public bool disparar;
+    public bool disparar; 
 
     void Start()
     {
         direccion = -transform.up;
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
 
